@@ -1,0 +1,16 @@
+{
+  "name": "devhouse",
+  "version": "1.0.0",
+  "description": "Dev House Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
