@@ -3,6 +3,9 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 
+const helmet = require('helmet');
+const compression = require('compression');
+
 app.set('views', './views') // specify the views directory
 app.set('view engine', 'ejs') // register the template engine
 
