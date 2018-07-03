@@ -11,4 +11,4 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => res.render('home'))
 
-app.listen(4000, () => console.log('Example app listening on port 4000!'))
+app.listen(80, () => console.log('Example app listening on port 4000!'))
