@@ -1,7 +1,13 @@
 require('dotenv').config()
 
 const express = require('express')
+const bodyParser = require('body-parser')
+const routes = require('./routes/routes.js')
 const app = express()
+
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 const helmet = require('helmet');
 const compression = require('compression');
@@ -14,4 +20,6 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => res.render('home'))
 
-app.listen(3000, () => console.log('Example app listening on port 4000!'))
+routes(app);
+
+app.listen(3000, () => console.log('Example app listening on port 3000!'))
