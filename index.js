@@ -2,6 +2,7 @@ require('dotenv').config()
 
 const express = require('express')
 const bodyParser = require('body-parser')
+const http = require('http');
 const routes = require('./routes/routes.js')
 const app = express()
 
@@ -23,4 +24,5 @@ app.get('/about', (req, res) => res.render('about'))
 
 routes(app);
 
-app.listen(80, () => console.log('Example app listening on port 3000!'))
+const port = process.env.PORT || 80;
+app.listen(port, () => console.log('Example app listening on port 3000!'))
