@@ -25,5 +25,5 @@ app.get('/about', (req, res) => res.render('about'))
 
 routes(app);
 
-const port = process.env.PORT || 3002;
-app.listen(3002, () => console.log('Example app listening on port 3002!'))
+const port = process.env.PORT || 3000;
+app.listen(3000, () => console.log('Example app listening on port 3002!'))
