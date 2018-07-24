@@ -4,7 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-
+@import './mixins.scss';
  p {
      line-height: 25px;
  }
@@ -56,6 +56,9 @@
     width: 100%;
     padding: 5px 0 5px 0;
     z-index: 99;
+    @include mobile-device-screen { 
+		display: none;
+	}
     li {
         color: #335578;
         font-family: 'Open Sans', sans-serif;
@@ -94,12 +97,12 @@ header {
 }
 
 .jumbotron {
-    height: 470px;
+
     background-color: #4d8bff;
     border-radius:0px;
     color:#fff;
     padding-top: 45px;
-    padding-bottom: 15px;
+    padding-bottom: 45px;
     position: relative;
     border-bottom: 10px solid #e2f3ff;
     .img {
