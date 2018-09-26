@@ -21,7 +21,7 @@ app.use(helmet(), compression(), cookieParser());
 
 
 app.get('/', (req, res) => res.render('home'))
-app.get('/about', (req, res) => res.render('about'))
+app.get('/why-us', (req, res) => res.render('why-us'))
 
 routes(app);
 

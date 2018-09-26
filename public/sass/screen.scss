@@ -65,9 +65,8 @@
  .border-yellow {
     margin-left: auto;
     margin-right: auto;
-    width: 45px;
+    width: 100px;
     height: 3px;
-    margin-top: 25px;
     margin-bottom: 25px;
     display: block;
     background-color: #fe3;
@@ -82,7 +81,7 @@
  .section-title {
     font-size: 45px;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     z-index: 98;
  }
 
@@ -90,7 +89,7 @@
     color: #4b5d73;
     font-size: 38px;
     line-height: 27px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     z-index: 98;
  }
 
@@ -213,11 +212,11 @@ header {
 .service {
     padding-bottom: 40px;
     h2 {
-        font-size:25px;
+        font-size:46px;
         text-transform: uppercase;
     }
     h3 {
-
+        font-size:25px;
     }
     .service-row {
         display: -ms-flexbox;
